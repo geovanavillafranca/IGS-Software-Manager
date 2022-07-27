@@ -48,7 +48,7 @@ Employee by id [http://127.0.0.1:8081/employees/id/](http://127.0.0.1:8081/emplo
 
 ![alt text](readme_prints/api-employee-id.png)
 
-Department by id [http://127.0.0.1:8081/](http://127.0.0.1:8081/department/1/)
+Department by id [http://127.0.0.1:8081/departments/1/](http://127.0.0.1:8081/departments/1/)
 
 ![alt text](readme_prints/api-department-id.png)
 
