@@ -40,6 +40,8 @@ Now run the API
 ```
 py manage.py runserver 8081
 ```
+API [http://127.0.0.1:8081/](http://127.0.0.1:8081/)
+
 
 ## Run the website
 ```
