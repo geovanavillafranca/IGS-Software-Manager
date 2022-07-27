@@ -40,8 +40,17 @@ Now run the API
 ```
 py manage.py runserver 8081
 ```
-API [http://127.0.0.1:8081/](http://127.0.0.1:8081/)
+API url's [http://127.0.0.1:8081/](http://127.0.0.1:8081/)
 
+![alt text](readme_prints/api-home.png)
+
+Employee by id [http://127.0.0.1:8081/employees/id/](http://127.0.0.1:8081/employees/1/)
+
+![alt text](readme_prints/api-employee-id.png)
+
+Department by id [http://127.0.0.1:8081/](http://127.0.0.1:8081/department/1/)
+
+![alt text](readme_prints/api-department-id.png)
 
 ## Run the website
 ```
@@ -49,6 +58,17 @@ cd ags_site
 py manage.py runserver
 ```
 
-Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to see the home page.
+Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to see the Home Page.
 
+![alt text](readme_prints/site-home.png)
+
+
+List all employees [http://127.0.0.1:8000/employees/](http://127.0.0.1:8000/employees/)
+
+![alt text](readme_prints/site-employees.png)
+
+
+List all departments [http://127.0.0.1:8000/departments/](http://127.0.0.1:8000/departments/)
+
+![alt text](readme_prints/site-departments.png)
 
