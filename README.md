@@ -44,17 +44,17 @@ API url's [http://127.0.0.1:8081/](http://127.0.0.1:8081/)
 
 ![alt text](readme_prints/api-home.png)
 
-Employee by id [http://127.0.0.1:8081/employees/id/](http://127.0.0.1:8081/employees/1/)
+Employee by id [http://127.0.0.1:8081/employees/{id}/](http://127.0.0.1:8081/employees/1/)
 
 ![alt text](readme_prints/api-employee-id.png)
 
-Department by id [http://127.0.0.1:8081/departments/1/](http://127.0.0.1:8081/departments/1/)
+Department by id [http://127.0.0.1:8081/departments/{id}/](http://127.0.0.1:8081/departments/1/)
 
 ![alt text](readme_prints/api-department-id.png)
 
 ## Run the website
 ```
-cd ags_site
+cd igs_site
 py manage.py runserver
 ```
 
