@@ -1,5 +1,5 @@
 from rest_framework import viewsets, generics
-
+from rest_framework.response import Response
 from .models.employee import Employee, Department
 
 
@@ -13,6 +13,17 @@ class EmployeesViewSet(viewsets.ModelViewSet):
     """
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
+
+    def list(self, request, *args, **kwargs):
+
+        page = self.paginate_queryset(self.queryset)
+        if page is not None:
+            serializer = EmployeeListSerializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = EmployeeListSerializer(self.queryset, many=True)
+        return Response(serializer.data)
+
 
 class DepartmentsViewSet(viewsets.ModelViewSet):
     """

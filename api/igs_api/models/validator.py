@@ -1,9 +1,8 @@
 import re
-
+from rest_framework import serializers
 
 def validate_email(email):
-    regex = '^[a-z0-9]+[\._]?[a-z0-9]+(@igs-software.com.br)'
+    regex = '^(.*\w)(@igs-software\.com\.br)$'
     if re.search(regex,email):
         return True
-    return False
-        
+    raise serializers.ValidationError("Email must follow the pattern: email@igs-software.com.br")
