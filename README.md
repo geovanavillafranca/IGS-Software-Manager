@@ -36,6 +36,11 @@ You can create super user if you want
 py manage.py createsuperuser
 ```
 
+You can test the API with
+```
+py manage.py test
+```
+
 Now run the API
 ```
 py manage.py runserver 8081
